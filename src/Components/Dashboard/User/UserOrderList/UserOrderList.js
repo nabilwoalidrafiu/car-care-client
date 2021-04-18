@@ -6,7 +6,7 @@ const UserOrderList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [events, setEvents] = useState([]); 
     useEffect(()=>{
-        fetch('https://agile-anchorage-30388.herokuapp.com/checkout?email=' + loggedInUser.email)
+        fetch('https://agile-anchorage-30388.herokuapp.com/orderByEmail?email=' + loggedInUser.email)
         .then(res => res.json())
         .then(data => {setEvents(data)})
     },[events])
