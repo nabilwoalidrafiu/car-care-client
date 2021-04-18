@@ -1,0 +1,50 @@
+@import url("https://use.typekit.net/ivq4uiu.css");
+html {
+	background: #2b2a34;
+	color: #f2f2f2;
+}
+.container {
+	margin-top: 50px;
+}
+.testimonial-wrapper {
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+}
+.testimonial-wrapper:hover {
+    margin-top: -3px;
+}
+.testimonial {
+    background: #393846;
+    box-shadow: 0 15px 100px #1e1d25;
+    border-radius: 4px;
+    padding: 20px;
+}
+.quote {
+    font-size: 1.3rem;
+    color: #f2f2f2;
+    z-index: 1;
+    font-family: halyard-text, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0.02rem;
+}
+.attribution {
+    color: #d78118;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding-top: 15px;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    font-style: normal;
+}
+.section-title h2 {
+    color: #444;
+    font-size: 42px;
+}
+.section-title p {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 40px;
+    color: #666;
+}

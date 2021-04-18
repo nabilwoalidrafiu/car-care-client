@@ -1,0 +1,34 @@
+.contact-us
+{
+	overflow:hidden;
+	background: url('https://insurancenetusa.com/wp-content/uploads/2015/10/retirement-insurance-slide.jpg') no-repeat center center fixed;
+	min-height: 300px
+}
+.contact-us .fields
+{
+	background-color: rgba(3, 3, 3, 0.8);
+	color: #DDD;
+	min-height: 300px;
+	padding-top: 40px;
+	padding-bottom: 40px
+}
+.contact-us p {margin-bottom: 40px}
+.contact-us textarea {height: 108px}
+.contact-us input[type="text"],
+.contact-us textarea
+{
+	background: rgba(80, 70, 70, 0.5);
+	color: #FFF;
+	border: none
+}
+/*End Section Contact Us*/
+/*Start Section Our Clients*/
+.our-clients {background: #EEE; padding-top: 20px; padding-bottom: 20px}
+.our-clients img
+{
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.our-clients img:hover {opacity: 1}

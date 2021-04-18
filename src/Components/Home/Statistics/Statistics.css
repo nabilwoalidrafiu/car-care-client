@@ -1,0 +1,28 @@
+.statistics
+{
+	background: url('http://www.lgcomputers.it/lgcomputers/images/page-background.jpg') no-repeat center center fixed;
+	min-height: 300px
+}
+.statistics .data
+{
+	background-color: rgba(3, 3, 3, 0.7);
+	color: #B6B5B5;
+	min-height: 300px;
+	padding-top: 40px;
+	padding-bottom: 70px
+}
+.statistics .stats {
+    margin-bottom: 30px
+    }
+.statistics .stats:hover {
+    color: #FFF
+    }
+.statistics p {
+    font-size: 60px; font-weight: 600px; margin-bottom: 0
+    }
+.statistics span {
+    font-size: 16px
+    }
+   .icon{
+        width: 100px;
+    }
