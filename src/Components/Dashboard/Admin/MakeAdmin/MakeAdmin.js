@@ -8,7 +8,7 @@ const MakeAdmin = () => {
             email: data.email
           }
           console.log(data)
-          const url = `https://agile-anchorage-30388.herokuapp.com/checkAdmin`
+          const url = `https://agile-anchorage-30388.herokuapp.com/addAdmin`
         fetch(url, {
             method: "POST",
             headers: {

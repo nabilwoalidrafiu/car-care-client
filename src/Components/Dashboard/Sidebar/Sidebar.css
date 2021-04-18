@@ -1,18 +1,20 @@
 body {
     overflow-x: hidden;
-    height: 900px;
+    /* height: 900px; */
  }
 
  .sidebar{
-    background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
+    /* background-image: linear-gradient(40deg, #19d3ae,#0fcfec); */
     /* position: fixed; */
+    background-color: #26272b;
 }
 .sidebar li{
     margin-bottom: 2em;
 }
-.sidebar li:hover span{
+.sidebar li:hover {
     display: inline-block;
     transform: translate(5px);
+    color: white;
 }
 .sidebar svg{
     margin-right: 5px;

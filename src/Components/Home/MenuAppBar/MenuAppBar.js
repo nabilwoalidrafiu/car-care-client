@@ -91,8 +91,8 @@ const MenuAppBar = (props) => {
                   >
                     <MenuItem onClick={() => handleMenuClick('/home')}>Home</MenuItem>
                     <MenuItem onClick={() => handleMenuClick('/dashboard')}>Dashboard</MenuItem>
-                    <MenuItem onClick={() => handleMenuClick('/admin')}>Admin</MenuItem>
-                    <MenuItem onClick={() => handleMenuClick('/deals')}>Deals</MenuItem>
+                    <MenuItem onClick={() => handleMenuClick('/contact')}>Contact</MenuItem>
+                    <MenuItem onClick={() => handleMenuClick('/about')}>About</MenuItem>
                     {loggedInUser.email ?<MenuItem >{loggedInUser.displayName}</MenuItem> : 
                     <MenuItem onClick={() => handleMenuClick('/login')}>Login</MenuItem>}
                   </Menu>
@@ -101,8 +101,8 @@ const MenuAppBar = (props) => {
                       <div className={classes.headerOption}>
                           <Button style={{fontSize: '18px', marginRight:'5px'}} color="inherit" onClick={() => handleMenuClick('/home')} >Home</Button>
                           <Button style={{fontSize: '18px', marginRight:'5px'}} color="inherit" onClick={() => handleMenuClick('/dashboard')} >Dashboard</Button>
-                          <Button style={{fontSize: '18px', marginRight:'5px'}} color="inherit" onClick={() => handleMenuClick('/admin')} >Admin</Button>
-                          <Button style={{fontSize: '18px', marginRight:'5px'}} color="inherit" onClick={() => handleMenuClick('/deals')} >Deals</Button>
+                          <Button style={{fontSize: '18px', marginRight:'5px'}} color="inherit" onClick={() => handleMenuClick('/contact')} >Contact</Button>
+                          <Button style={{fontSize: '18px', marginRight:'5px'}} color="inherit" onClick={() => handleMenuClick('/about')} >About</Button>
                           {loggedInUser.email ?<Button style={{fontSize: '18px', marginRight:'5px'}} color="inherit" variant="contained">{loggedInUser.displayName}</Button> : <Button onClick={() => handleMenuClick('/login')} variant="contained">Login</Button>}
                       </div>
                     

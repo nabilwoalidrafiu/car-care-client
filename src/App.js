@@ -12,7 +12,6 @@ import Home from './Components/Home/Home/Home';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Login from './Components/Login/Login';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
-import User from './Components/Dashboard/User/User/User';
 import Order from './Components/Dashboard/User/Order/Order';
 
 export const UserContext = createContext()
@@ -32,7 +31,7 @@ function App() {
                 <Dashboard></Dashboard>
               </PrivateRoute>
               <PrivateRoute path='/order/:_id'>
-                <User></User>
+                <Dashboard></Dashboard>
               </PrivateRoute>
               <Route path='/'>
                 <Home></Home>

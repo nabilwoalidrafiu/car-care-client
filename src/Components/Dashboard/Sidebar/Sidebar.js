@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext,useEffect, useState } from 'react';
+import { UserContext } from '../../../App';
 import './Sidebar.css';
 import { useHistory, useParams } from 'react-router';
 // const { BrowserRouter, Route, Link } = ReactRouterDOM;
@@ -58,19 +59,28 @@ const routes = [
   }
 ];
 const Sidebar = () => {
+
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+  const [isAdmin, setIsAdmin] = useState(false);
+  useEffect(() => {
+    fetch('https://agile-anchorage-30388.herokuapp.com/isAdmin', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ email: loggedInUser.email })
+    })
+        .then(res => res.json())
+        .then(data => setIsAdmin(data));
+}, [])
+
     const {_id } = useParams();
     return (
         <Router>
         <div className='row container ' style={{ height: "100vh" }}>
-          <div 
-          className="col-md-3 sidebar"
-            // style={{
-            //   padding: "10px",
-            //   width: "200px",
-            //   background: "#f0f0f0"
-            // }}
-          >
+          <div className="col-md-3 sidebar" >
             <ul className="list-unstyled">
+              {/* admin */}
+           {isAdmin && 
+           <div>
             <li>
                 <Link to="/adminOrderList">Admin Order List</Link>
               </li>
@@ -83,6 +93,7 @@ const Sidebar = () => {
               <li>
                 <Link to="/makeAdmin">Make Admin</Link>
               </li>
+           </div>}
 
               {/* user */}
               
