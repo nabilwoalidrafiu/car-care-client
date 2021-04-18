@@ -16,7 +16,7 @@ const OrderList = () => {
 
     return (
         <div className="text-center container">
-        <h3 className="text-center">Manage Services</h3>
+        <h3 className="text-center">All Order Lists</h3>
         <Table striped bordered hover variant="dark">
         <thead>
             <tr>
@@ -24,7 +24,7 @@ const OrderList = () => {
             <th>Email Id</th>
             <th>Services</th>
             <th>Pay With</th>
-            <th>Status</th>
+            {/* <th>Status</th> */}
             </tr>
         </thead>
         <tbody>
@@ -34,8 +34,8 @@ const OrderList = () => {
                         <td>{event.displayName}</td>
                         <td>{event.email}</td>
                         <td>{event.name}</td>
-                        <td>{event.paymentId.card.brand} Card</td>
-                        <td></td>
+                        <td>{event.paymentId.card.funding} Card</td>
+                        {/* <td></td> */}
                         </tr>)
                 } 
            

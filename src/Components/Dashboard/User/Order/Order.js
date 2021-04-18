@@ -33,12 +33,8 @@ const Order = () => {
         <div className="container">
             <h3 className='text-center'>Your are Ordering </h3>
         
-        {/* <h3>Name: {checkout.name}</h3> */}
-        {/* <Button
-         onClick={handleOrder}
-         className="btn-dark">Order</Button> */}
+       
           <div className="service-box">
-                {/* <img src={checkout.imageURL}  height='250px' width='300px' alt=""/> */}
                 <h4>Service: {checkout.name}</h4>
                 <h4>Price: {checkout.price}</h4>
                 <h5>Name: {loggedInUser.displayName}</h5>
